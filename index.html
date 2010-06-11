@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title>jQuery Circulate</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.2.js'></script>
+    <script type='text/javascript' src='js/jquery.circulate.js'></script>
+    <script type='text/javascript' src='js/example.js'></script>
+</head>
+
+<body>
+
+    <img src="images/unicorn.png" alt="A Friggin Unicorn, yo." id="unicorn" />
+
+	 <div id="page-wrap">
+	
+	   <img src="images/circulate.png" alt="Circulate" />
+	   
+	    <div class="top-demo group">
+		    <div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+    		<div></div>
+		</div>
+				
+		<h2>Prereqs</h2>
+      
+      <p>Requires the <a href="http://jquery.com">jQuery Library</a> as well as the <a href="http://plugins.jquery.com/files/jquery.easing.1.2.js.txt">Easing plugin</a>.</p>
+      
+<pre>&lt;script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'>&lt;/script>
+&lt;script type='text/javascript' src='js/jquery.easing.1.2.js'>&lt;/script>
+&lt;script type='text/javascript' src='js/jquery.circulate.js'>&lt;/script></pre>
+		
+		<h2>Usage / Options / Defaults</h2>
+		
+		<pre>$("#anything).circulate({
+
+    speed: 400,                  // Speed of each quarter segment of animation, 1000 = 1 second
+    height: 200,                 // Distance vertically to travel
+    width: 200,                  // Distance horizontally to travel
+    sizeAdjustment: 100,         // Percentage to grow or shrink
+    loop: false,                 // Circulate continuously
+    zIndexValues: [1, 1, 1, 1]   // Sets z-index value at each stop of animation
+
+});</pre>
+
+        <h2>Stopping a loop</h2>
+        
+        <pre>$("#anything").circulate("Stop");</pre>
+        
+        <p id="text-demo" class="group"c><span>C</span><span>R</span><span>A</span><span>Z</span><span>Y</span></p>
+        
+        <button id="recurssive-button">Start</button>
+        
+        <h2>Download</h2>
+        
+        <p>VERY BETA: <a href="/examples/Circulate.zip">Full package (what you are looking at)</a></p>
+        
+                
+        <div id="sphere-area">
+            <img src="images/ball-orange.png" alt="ball" id="orange-ball" />
+            <img src="images/ball-blue.png" id="blue-ball" alt="" />
+            <img src="images/ball-green.png" id="green-ball" alt="" />
+        </div>
+        
+        <p><a href="http://css-tricks.com/circulate/">&lt; Back to Article</a></p>
+
+	</div>
+	
+</body>
+
+</html>
